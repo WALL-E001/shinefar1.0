@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html class="wide wow-animation" lang="en">
+<!-- 文档头部，包含页面的元数据和链接的资源 -->
+
+<head>
+  <!-- 设置页面标题 -->
+  <title>Home</title>
+  <!-- 设置字符编码为 UTF-8 -->
+  <meta charset="utf-8">
+  <!-- 禁止浏览器自动将数字识别为电话号码 -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- 设置视口，确保页面在不同设备上正确显示 -->
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- 设置网站图标 -->
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <!-- 引入外部 CSS 样式文件 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 针对旧版本 IE 浏览器的兼容处理 -->
+  <!--[if lt IE 10]>
+        <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;">
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+                <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+            </a>
+        </div>
+        <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+  <!-- 引入 Material Icons 字体样式 -->
+  <link rel="stylesheet" href="fonts/materialicons/material-icons.css">
+  <style>
+    .container {
+      position: relative;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .main-image {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay-wrapper {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 50%;
+      /* 小图片的宽度，可以根据需要调整 */
+      opacity: 0.9;
+      /* 仅用于背景图片的透明度（如果需要），这里实际上对文字无效 */
+      pointer-events: none;
+      /* 确保叠加层不干扰主图片的点击事件 */
+      transform: translate(-50%, -50%);
+      /* 居中调整 */
+    }
+
+    .overlay-image {
+      width: 100%;
+      /* 确保小图片填充其父容器 */
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      /* 文字颜色 */
+      font-size: 16px;
+      /* 文字大小 */
+      text-align: center;
+      pointer-events: none;
+      /* 确保文字不干扰其他点击事件 */
+      /* 可以根据需要添加阴影或其他样式 */
+      text-shadow: 1px 1px 2px black;
+      /* 文字阴影效果 */
+      width: 80%;
+    }
+  </style>
+</head>
+<!-- 文档主体，包含页面的可见内容 -->
+
+
+<body>
+  <!-- 页面容器 -->
+  <div class="page">
+    <!-- 页面头部，包含导航栏和轮播图 -->
+    <header class="page-header" id="home" data-type="anchor">
+      <!-- 导航栏包装器 -->
+      <div class="rd-navbar-wrap">
+        <!-- 导航栏，具有多种响应式布局配置 -->
+        <nav class="rd-navbar novi-background custom-bg-image bg-cover top-panel-none-items"
+          data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth"
+          data-sm-device-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static"
+          data-md-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-sm-stick-up="true" data-md-stick-up="true"
+          data-lg-stick-up="true" data-stick-up-clone="true">
+          <!-- 导航栏顶部面板 -->
+          <div class="rd-navbar-top-panel">
+            <div class="rd-navbar-inner">
+              <!-- 导航栏折叠按钮 -->
+              <button class="rd-navbar-collapse-toggle"
+                data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart">
+                <span></span>
+              </button>
+
+
+            </div>
+          </div>
+          <!-- 导航栏内部 -->
+          <div class="rd-navbar-inner">
+            <!-- 导航栏面板 -->
+            <div class="rd-navbar-panel">
+              <!-- 导航栏切换按钮 -->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar">
+                <span></span>
+              </button>
+              <!-- 网站品牌标识 -->
+              <div class="rd-navbar-brand">
+                <a href="index.html">
+                  <span class="brand-name" style="font-size: 20px;">河南省沈发超硬材料有限公司</span><br>
+                  <span class="brand-slogan">SHINEFAR Superhard Materials Co., Ltd</span>
+                </a>
+              </div>
+            </div>
+            <!-- 导航栏菜单和购物车图标 -->
+            <div class="rd-navbar-nav-wrap">
+
+              <!-- 导航栏菜单列表 -->
+              <ul class="rd-navbar-nav">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#blog">产品</a></li>
+                <li><a href="#contacts">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <img src="images/pinhe-1.jpg" alt="主图片" class="main-image">
+        <div class="overlay-wrapper" style="display: flex;">
+          <img src="images/3-p.jpg" alt="叠加小图片" class="overlay-image">
+
+        </div>
+      </div>
+    </header>
+    <!-- “关于公司” 部分的 HTML 代码块，通过多个类名设置样式，以响应式布局显示内容，id 为 'about' 用于锚点定位 -->
+    <section class="well well-sm text-center text-md-left section novi-background custom-bg-image" id="about"
+      data-type="anchor">
+      <!-- 容器类，用于限制内容宽度并居中显示 -->
+      <div class="container">
+        <!-- 行布局，用于将内容按列排列 -->
+        <div class="row">
+          <!-- 左半部分内容区域，在中等屏幕及以上占 6 列，大屏幕及以上占 5 列 -->
+          <div class="col-md-6 col-lg-5">
+            <!-- 标题，字体加粗 -->
+            <h1 class="text-bold">公司介绍</h1>
+            <!-- 重要段落，使用 'lead' 类设置样式 -->
+            <p class="lead">河南省沈发超硬材料有限公司始于1988年。是一家专业致力于研制与生产立方氮化硼的企业。 <!-- 换行 -->
+              <br><br>我公司现生产经营的主要产品有：立方氮化硼单晶系列，CBN微粉系列以及镀覆产品。公司拥有先进的生产设备工艺，现代化的质量检测设备以及严格的生产管理体系。
+              公司目标成为国内最专业，最精致的实验室型CBN制造商。
+            </p>
+          </div>
+          <!-- 右半部分内容区域，在中等屏幕及以上占 6 列，大屏幕及以上占 6 列，且左侧有偏移 -->
+          <div class="col-md-6 col-lg-6 col-lg-offset-1 text-left ">
+            <!-- 进度条的外层容器 -->
+            <div class="progress-outer">
+              <!-- 第一个进度条及其说明的包装器 -->
+              <div class="progress-wrapper">
+                <!-- 进度条对应的能力描述，字体为辅助字体，大写显示，浅色文字 -->
+                <p class="font-secondary big text-uppercase text-light-clr">品牌</p>
+                <!-- 进度条容器 -->
+                <div class="progress">
+                  <!-- 进度条主体，当前进度为 75%，通过 aria 属性提供辅助信息 -->
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <!-- 可能用于显示进度百分比或其他额外信息的元素 -->
+                  <span class="small text-light-clr"></span>
+                </div>
+              </div>
+              <!-- 第二个进度条及其说明的包装器 -->
+              <div class="progress-wrapper">
+                <!-- 进度条对应的能力描述，样式同第一个 -->
+                <p class="font-secondary big text-uppercase text-light-clr">质量</p>
+                <!-- 进度条容器 -->
+                <div class="progress">
+                  <!-- 进度条主体，当前进度为 85% -->
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <!-- 额外信息显示元素 -->
+                  <span class="small text-light-clr"></span>
+                </div>
+              </div>
+              <!-- 第三个进度条及其说明的包装器 -->
+              <div class="progress-wrapper">
+                <!-- 进度条对应的能力描述，样式同前两个 -->
+                <p class="font-secondary big text-uppercase text-light-clr">行业经验</p>
+                <!-- 进度条容器 -->
+                <div class="progress">
+                  <!-- 进度条主体，当前进度为 80% -->
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <!-- 额外信息显示元素 -->
+                  <span class="small text-light-clr"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 博客文章展示区域，有边框，使用自定义背景图片并覆盖整个区域，小屏幕下内容居中，中等屏幕及以上内容左对齐 -->
+    <section
+      class="well well-sm well-inset-2 text-center text-md-left section-border section novi-background custom-bg-image bg-cover"
+      id="blog" data-type="anchor">
+      <!-- 容器，用于限制内容宽度并使其居中 -->
+      <div class="container">
+        <!-- 博客文章区域的标题，字体加粗，内容居中 -->
+        <h1 class="text-bold text-center">产品展示</h1>
+        <!-- 创建行布局，行内元素有一定偏移 -->
+        <div class="row flow-offset-1">
+          <!-- SF10，在中等屏幕下占 4 列 -->
+          <div class="col-md-4">
+            <!-- 文章缩略图组件 -->
+            <article class="thumbnail thumbnail-4">
+              <!-- 文章图片链接 -->
+              <a class="img-wrap" href="#"><img src="images/SF10-P.jpg" alt=""></a>
+              <!-- 文章标题、摘要和相关信息 -->
+              <div class="caption">
+                <!-- 文章标题链接 -->
+                <h4 style="text-align: center;">SF10</h4>
+                <!-- 文章摘要 -->
+                <p style="margin-bottom: 20px;">黑色单晶体，形状不规则，强度低，易破碎。它的强度，热稳定性以及自锐性特征使其广泛应用于树脂结合剂系统。</p>
+
+              </div>
+            </article>
+          </div>
+          <!-- SF15，布局设置与第一篇相同 -->
+          <div class="col-md-4">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF15-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">SF15</h4>
+                <p>黑色单晶体，半块状，中等强度,良好的锋利性,兼顾了磨削效率与磨削寿命。适用于树脂和陶瓷结合剂系统。</p>
+              </div>
+            </article>
+          </div>
+          <!-- SF30，布局设置与第一篇相同 -->
+          <div class="col-md-4">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF30-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">SF30</h4>
+                <p>黑色，块状，高强度，在超高速和高温磨削中有不可比拟的热稳定性，广泛应用于陶瓷，金属，电镀结合剂系统。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row flow-offset-1">
+          <!-- 第二行产品展示，在中等屏幕下占 4 列 -->
+          <div class="col-md-4">
+            <!-- 文章缩略图组件 -->
+            <article class="thumbnail thumbnail-4">
+              <!-- 文章图片链接 -->
+              <a class="img-wrap" href="#"><img src="images/SF20-P.jpg" alt=""></a>
+              <!-- 文章标题、摘要和相关信息 -->
+              <div class="caption">
+                <!-- 文章标题链接 -->
+                <h4 style="text-align: center;">SF20</h4>
+                <!-- 文章摘要 -->
+                <p>纯净的琥珀色，形状不规则，棱角突出，脆性极佳，中等强度。常用于树脂结合剂体系。</p>
+
+              </div>
+            </article>
+          </div>
+          <!-- SF25，布局设置与第一篇相同 -->
+          <div class="col-md-4" style="margin-bottom: 40px;">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF25-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">SF25</h4>
+                <p>琥珀色，透明度好，晶型规则，较高强度，适用于陶瓷与电镀结合剂体系。</p>
+
+              </div>
+            </article>
+          </div>
+          <!-- 第三篇博客文章，布局设置与第一篇相同 -->
+          <div class="col-md-4">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF40-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">SF40</h4>
+                <p style="margin-bottom: 20px;">深棕色，高强度,高热稳定性。形状不规则，有尖锐的棱角，适用于对磨料要求比较高的陶瓷结合剂，电镀和金属结合剂系统。</p>
+
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row flow-offset-1">
+          <!-- 第一篇博客文章，在中等屏幕下占 4 列 -->
+          <div class="col-md-4">
+            <!-- 文章缩略图组件 -->
+            <article class="thumbnail thumbnail-4">
+              <!-- 文章图片链接 -->
+              <a class="img-wrap" href="#"><img src="images/SF45-P.jpg" alt=""></a>
+              <!-- 文章标题、摘要和相关信息 -->
+              <div class="caption">
+                <!-- 文章标题链接 -->
+                <h4 style="text-align: center;">SF45</h4>
+                <!-- 文章摘要 -->
+                <p style="margin-bottom: 20px;"></p>>深棕色，单晶体，完整晶型率高。强度高，热稳定性好。应用于陶瓷结合剂体系、金属结合剂体系和电镀结合剂体系</p>
+                <!-- 文章信息区域 -->
+
+              </div>
+            </article>
+          </div>
+          <!-- 第二篇博客文章，布局设置与第一篇相同 -->
+          <div class="col-md-4">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF50-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">SF50</h4>
+                <p>金色，块状，高强度，高热稳定性。在磨削过程中表现出非常好的磨削效率与较长的磨削寿命，尤其适合于电镀工具等。</p>
+
+              </div>
+            </article>
+          </div>
+          <!-- 第三篇博客文章，布局设置与第一篇相同 -->
+          <div class="col-md-4">
+            <article class="thumbnail thumbnail-4">
+              <a class="img-wrap" href="#"><img src="images/SF10-P.jpg" alt=""></a>
+              <div class="caption">
+                <h4 style="text-align: center;">B-MP</h4>
+                <p>黑色微粉产品， CBN微粉规格齐全，晶体纯度高，热稳定性能好，具有良好的自锐性、研磨效率高等特点。使用它可获得精密高光洁度的工作表面。</p>
+
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row flow-offset-1">
+          <!-- 第一篇博客文章，在中等屏幕下占 4 列 -->
+          <div class="col-md-4">
+            <!-- 文章缩略图组件 -->
+            <article class="thumbnail thumbnail-4">
+              <!-- 文章图片链接 -->
+              <a class="img-wrap" href="#"><img src="images/SF20-P.jpg" alt=""></a>
+              <!-- 文章标题、摘要和相关信息 -->
+              <div class="caption">
+                <!-- 文章标题链接 -->
+                <h4 style="text-align: center;">A-MP</h4>
+                <!-- 文章摘要 -->
+                <p style="margin-bottom: 20px;">琥珀色微粉产品， CBN微粉规格齐全，晶体纯度高，热稳定性能好，具有良好的自锐性、研磨效率高等特点。使用它可获得精密高光洁度的工作表面。</p>
+                <!-- 文章信息区域 -->
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 联系我们部分的外层容器，设置了背景图片和一些自定义样式类，id="contacts" 用于锚点定位 -->
+    <section class="bg-image bg-image-2 section novi-background custom-bg-image" id="contacts" data-type="anchor">
+      <!-- 内部的一个子部分，应用了 well 和 well-sm 类，可能用于设置内边距和样式 -->
+      <section class="well well-sm">
+        <!-- 容器类，用于将内容居中并限制其宽度，inset-sm-min-wrap 可能是自定义的类用于设置内边距相关样式 -->
+        <div class="container inset-sm-min-wrap">
+          <!-- 行布局，flow-offset-1 可能是自定义的类用于设置行内元素的偏移 -->
+          <div class="row flow-offset-1">
+            <!-- 左侧列，在中等屏幕（md）上占 8 列，设置了一些样式类用于背景、阴影等效果 -->
+            <div class="col-md-8 btn-shadow inset-sm-min img-rounded bg-white novi-background custom-bg-image bg-cover">
+              <!-- 联系我们部分的标题，字体加粗且内容居中显示 -->
+              <h1 class="text-bold text-center" style="font-size: 2.4rem;">联系我们</h1>
+              <!-- 表单元素，用于用户提交联系信息，rd-mailform 可能是自定义的表单类，data-form-* 属性用于配置表单相关行为 -->
+              <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="forms"
+                method="post" action="bat/rd-mailform.php">
+                <!-- 表单行布局，row-20 可能设置行内元素间距为 20px，row-fix 可能用于固定行的样式 -->
+                <div class="row row-20 row-fix">
+                  <!-- 名字输入框所在列，在小屏幕（sm）上占 6 列 -->
+                  <div class="col-sm-6">
+                    <!-- 模拟的外部标签 -->
+                    <span class="fake-label-outside"> 姓名 </span>
+                    <!-- 表单输入框的包装容器，包含验证相关的样式类 -->
+                    <div class="form-wrap form-wrap-validation validation-with-outside-label">
+                      <!-- 表单标签 -->
+                      <label class="form-label" for="forms-name">姓名</label>
+                      <!-- 文本输入框，设置了 id、类型、名称和验证约束（必填） -->
+                      <input class="form-input" id="forms-name" type="text" name="name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <!-- 姓氏输入框所在列，在小屏幕（sm）上占 6 列 -->
+                  <div class="col-sm-6">
+                    <span class="fake-label-outside"> 联系方式 </span>
+                    <div class="form-wrap form-wrap-validation validation-with-outside-label">
+                      <label class="form-label" for="forms-last-name">电话号码</label>
+                      <input class="form-input" id="forms-last-name" type="text" name="last-name"
+                        data-constraints="@Required">
+                    </div>
+                  </div>
+                  <!-- 消息输入框所在列，在小屏幕（sm）上占 12 列 -->
+                  <div class="col-sm-12">
+                    <span class="fake-label-outside"> 您的信息 </span>
+                    <div class="form-wrap form-wrap-validation validation-with-outside-label">
+                      <label class="form-label" for="forms-message">请在此处留言 </label>
+                      <!-- 文本域输入框，用于输入消息，设置了验证约束（必填） -->
+                      <textarea class="form-input" id="forms-message" name="message"
+                        data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                  <!-- 电子邮件输入框所在列，在小屏幕（sm）上占 6 列 -->
+                  <div class="col-sm-6">
+                    <span class="fake-label-outside"> E-mail </span>
+                    <div class="form-wrap form-wrap-validation validation-with-outside-label">
+                      <label class="form-label" for="forms-email">mail@demolink.org</label>
+                      <!-- 电子邮件输入框，设置了验证约束（必填且必须是有效的电子邮件格式） -->
+                      <input class="form-input" id="forms-email" type="email" name="email"
+                        data-constraints="@Email @Required">
+                    </div>
+                  </div>
+                  <!-- 提交按钮所在列，在小屏幕（sm）上占 6 列 -->
+                  <div class="col-sm-6">
+                    <!-- 提交按钮，设置了按钮样式类，点击后提交表单 -->
+                    <button class="btn btn-primary btn-xs round-xl btn-block form-el-offset-1"
+                      type="submit">发送消息</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- 右侧列，在中等屏幕（md）上占 4 列，小屏幕下内容居中，中等及以上屏幕内容左对齐 -->
+            <div class="col-md-4 text-center text-md-left">
+              <!-- 联系信息块，设置了一些样式类用于背景、阴影等效果 -->
+              <address
+                class="contact-block inset-sm-min-2 img-rounded bg-white btn-shadow novi-background custom-bg-image bg-cover">
+                <!-- 定义列表，用于展示联系信息 -->
+                <dl>
+                  <!-- 地址标题 -->
+                  <dt class="h6">地址</dt>
+                  <!-- 具体地址 -->
+                  <dd>河南省济源市承留镇新材料产业园七号厂房</dd>
+                  <!-- 营业时间标题 -->
+                  <dt class="h6">营业时间</dt>
+                  <!-- 具体营业时间 -->
+                  <dd>营业时间：周一至周六8:00-17.00</dd>
+                  <!-- 电话标题 -->
+                  <dt class="h6">联系电话</dt>
+                  <!-- 电话号码链接 -->
+                  <dd>郭廷玉：13683809568</dd>
+                  <!-- 电子邮件标题 -->
+                  <dt class="h6">E-MAIL</dt>
+                  <!-- 电子邮件链接 -->
+                  <dd>shinefarsales@hotmail.com</dd>
+                </dl>
+                <!-- 社交图标列表，设置为行内列表，list-inline-3 可能是自定义的类用于设置图标间距等样式 -->
+
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- 页面页脚部分，整体内容居中，设置了自定义背景图片，应用了一些样式类 -->
+    <footer class="page-footer footer-centered text-center novi-background custom-bg-image bg-cover">
+      <!-- 页脚内容部分 -->
+      <section class="footer-content">
+        <!-- 容器类，用于将内容居中并限制其宽度 -->
+        <div class="container">
+          <!-- 网站品牌标识，点击可返回首页 -->
+          <div class="navbar-brand"><a href="index.html" style="font-size: 3rem;">河南省沈发超硬材料有限公司</a></div>
+          <!-- 描述性文字，字体较大 -->
+          <p class="big">专注立方氮化硼研发及制造</p>
+
+        </div>
+      </section>
+      <!-- 版权信息部分，同样设置了自定义背景图片和样式类 -->
+      <section class="copyright novi-background custom-bg-image bg-cover">
+        <!-- 容器类，用于将内容居中并限制其宽度 -->
+        <div class="container">
+          <!-- 版权声明文字，包含版权年份（通过 JavaScript 动态生成）和版权信息，以及网站模板的链接 -->
+          <p>© <span class="copyright-year"></span> 公安备案icp信息<a target="_blank" href="https://www.mobanwang.com/"
+              title="网站模板"> ICP备案号</a></p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <!-- 用于显示表单输出信息的容器，id 与表单的 data-form-output 属性对应 -->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- 引入核心 JavaScript 文件，可能包含一些基础的功能函数 -->
+  <script src="js/core.min.js"></script>
+  <!-- 引入 Bootstrap 的 JavaScript 文件，用于实现 Bootstrap 相关的交互功能 -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- 引入自定义的 JavaScript 文件，可能包含页面特定的交互逻辑和功能实现 -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
